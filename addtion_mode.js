@@ -22,9 +22,9 @@ function send(){
     number2 = document.getElementById("number2").value;
     console.log(number1);
     console.log(number2)
-   actual_answer = parseInt(number1) * parseInt(number2);
+   actual_answer = parseInt(number1) + parseInt(number2);
    console.log(actual_answer);
-    question_number = "<h4>" + number1 + "X" + number2 + "</h4>";
+    question_number = "<h4>" + number1 + "+" + number2 + "</h4>";
     input_box = "<br><br>Answer : <input type = 'text' id ='input_check_box'>";
     check_button = "<br><br><button onclick = 'check();'></button>";
     row = question_number + input_box + check_button;
@@ -71,6 +71,6 @@ function check()
     }
     document.getElementById("output").innerHTML = " ";
 }
-function move(){
-    window.location="addtion_mode.html";
+function previous(){
+    window.location="game_page.html";
 }
